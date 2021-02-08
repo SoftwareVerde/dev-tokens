@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Example Item 1",
+        "tokenAmount": 10,
+        "requiredFields": ["name", "email", "address", "item_size"],
+        "optionalFields": [],
+        "category": "Example Category",
+        "shortDescription": "This description of the redemption item is always displayed, so it should be short.",
+        "longDescription": "This description paragraph is shown when expanded.",
+        "formDescription": "This text appears above the form inputs."
+    },
+    {
+        "id": 2,
+        "name": "Example Item 2",
+        "tokenAmount": 100,
+        "requiredFields": ["name"],
+        "optionalFields": ["email", "color", "custom_name"],
+        "category": "Example Category",
+        "shortDescription": "This description of the redemption item is always displayed, so it should be short.",
+        "longDescription": "This description paragraph is shown when expanded.",
+        "formDescription": "This text appears above the form inputs."
+    },
+    {
+        "id": 3,
+        "name": "Example Item 3",
+        "tokenAmount": 100000,
+        "requiredFields": ["name"],
+        "optionalFields": [],
+        "category": "Example Category 2",
+        "shortDescription": "This description of the redemption item is always displayed, so it should be short.",
+        "longDescription": "This description paragraph is shown when expanded.",
+        "formDescription": "This text appears above the form inputs."
+    }
+]

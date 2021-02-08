@@ -1,0 +1,7 @@
+.gradle
+build
+.idea
+out
+/tmp
+/ssl/out
+.DS_Store
