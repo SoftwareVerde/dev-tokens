@@ -53,9 +53,9 @@ destination address) or public key (which will monitor the address but not trans
 destination address).  If running this application in conjunction with a flipstarter, it is recommended
 you set the `server.staticDonationWatchedAddresses` to be the recipient address(es) of your flipstarter.
 
-If you are provided perks to redeem with your tokens, you should configure the `conf/redemption-items.json`
-file.  Items listed here are displayed at the bottom of the donation page.  When a user redeems one of
-these items, an email is sent via the server configuration file.
+If you are providing perks to redeem with your tokens, you should configure the `conf/redemption-items.json`
+file.  Items listed here are displayed at the bottom of the donation page.  When a user redeems tokens for
+one of these items, an email is sent via the email client credentials configured within the server.conf file.
 
 Once you're done configuring your application, you may run it via:
 
@@ -66,8 +66,20 @@ Once you're done configuring your application, you may run it via:
 If you'd like to keep the application running as a daemon, you may run it via:
 
 ```
-nohup ./run.sh >> out/run.log &
+nohup ./run.sh >> logs/run.log &
 ```
+
+By default, the server listens on port 8080.  From the `out` directory, the served files are located within
+`www`.  Changes to existing files are updated live, without a server restart.  New assets require a server
+reset before they may be served.
+
+If you are looking at keeping the content of your donation page under version control, it is recommended to
+make changes to the `www` from the root project directory instead of `out`, and then use
+`./scripts/copy-www-data.sh` to push changes to the served content directory.
+
+** CAUTION ** Be sure to back up your token private keys.  Additionally, running `./scripts/make.sh` will
+destroy the `out` directory.  If making incremental changes to the java codebase, consider using
+`./scripts/make-jar.sh` instead to preserve the existing `out` directory.
 
 
 ## Contact
