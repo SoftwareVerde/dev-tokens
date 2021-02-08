@@ -21,7 +21,7 @@ dependencies {
     implementation  group: 'com.github.softwareverde',  name: 'http-servlet',           version: 'v3.2.0'
     implementation  group: 'com.github.softwareverde',  name: 'java-http-client',       version: 'v2.1.0'
     implementation  group: 'com.github.softwareverde',  name: 'java-cryptography',      version: 'v3.0.0'
-    implementation  group: 'com.github.softwareverde',  name: 'bitcoin-verde',          version: 'bcc40c33'
+    implementation  group: 'com.github.softwareverde',  name: 'bitcoin-verde',          version: '6fd0e418'
     implementation  group: 'com.github.softwareverde',  name: 'java-db-mysql-embedded', version: 'v3.0.1'
     implementation  group: 'com.sun.mail',              name: 'javax.mail',             version: '1.6.2'
 
